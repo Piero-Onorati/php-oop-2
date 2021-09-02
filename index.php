@@ -28,7 +28,7 @@
 
     //Classe Figlia SHOES
     try {
-        $scarpa = new Shoes(0,'Nike Jordan MA2','Sneakers beige pietra', 128.99,'Nike', 'https//', '...', '40', 'sneakers');
+        $scarpa = new Shoes(null,'Nike Jordan MA2','Sneakers beige pietra', 128.99,'Nike', 'https//', '...', '40', 'sneakers');
     } catch (Exception $e) {
         echo 'Errore: ' . $e->getMessage();
     }
