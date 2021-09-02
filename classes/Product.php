@@ -1,13 +1,13 @@
 <?php
 
     class Product {
-        public $id;
-        public $name;
-        public $description;
-        public $price;
-        public $manufacturer;
-        public $image;
-        public $slug;
+        protected $id;
+        protected $name;
+        protected $description;
+        protected $price;
+        protected $manufacturer;
+        protected $image;
+        protected $slug;
 
         function __construct($_id, $_name, $_description, $_price, $_manufacturer, $_image, $_slug ){
             $this->id = $_id;
