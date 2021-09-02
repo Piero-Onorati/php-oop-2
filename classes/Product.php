@@ -1,5 +1,10 @@
 <?php
 
+    /**
+     * class Product - classe genitore
+    */
+
+
     class Product {
         protected $id;
         protected $name;

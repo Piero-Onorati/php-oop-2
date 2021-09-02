@@ -1,9 +1,16 @@
 <?php
 
     require_once 'Product.php';
+    require_once __DIR__.'/../traits/Details.php';
+
+    /**
+     * class Clothing - classe figlia
+    */
 
     class Clothing extends Product
     {
+        use Details;
+
         // Aggiungere attributo per le taglie (S, M, L, etc.)
         protected $clothing_size;
         //Aggiungere attrbuto per il tipo di abbigliamento (felpe, pantaloni, etc.)

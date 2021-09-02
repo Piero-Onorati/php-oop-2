@@ -1,9 +1,16 @@
 <?php
 
     require_once 'Product.php';
+    require_once __DIR__.'/../traits/Details.php';
+
+    /**
+     * class Shoes - classe figlia
+    */
 
     class Shoes extends Product 
     {
+        use Details;
+        
         // Aggiungere attributo per le taglie (36, 37, 38, 39, etc.)
         protected $shoe_size;
         //Aggiungere attrbuto per il tipo di scarpa (boots, stringate, sneakers, etc.)
